@@ -35,6 +35,7 @@ process MULTIQC {
     """
     python -m venv venv
     source venv/bin/activate
+    pip install setuptools
     pip install -e multiqc_plugins --no-cache-dir
 
     multiqc \\
